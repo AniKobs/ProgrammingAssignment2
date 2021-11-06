@@ -19,9 +19,6 @@ makeCacheMatrix = function(x = matrix()){
 
 
 
-
-
-
 cacheSolve = function(x,...){
   inv = x$getinverse()
   
@@ -35,6 +32,5 @@ cacheSolve = function(x,...){
   inv = solve(matrix_to_invert,...)
   x$setinverse(inv)
   inv
-  
   
 }
